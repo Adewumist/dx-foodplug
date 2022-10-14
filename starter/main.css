@@ -28,8 +28,25 @@
 }
 
 /* reusable ends here */
+.backdrop{
+    width:100%;
+    height:100%;
+    background: var(--light-text-color);
+    position:fixed;
+    left:0;
+    top:0;
+    display:none;
+}
+
+.show-backdrop{
+    display: block;
+}
+
+
+
+
 header {
-              border: 3px solid tomato;
+              /* border: 3px solid tomato; */
 }
 
 
@@ -39,7 +56,7 @@ header {
     display:none;
 
     justify-content:space-between ;
-    padding:0 20px;
+    padding:10px 30px;
     align-items: center;
     background: var( --main-color);
 }
@@ -55,7 +72,7 @@ header {
 }
 
 .mobile-logo-container{
-    border:3px solid var(--white-color);
+    /* border:3px solid var(--white-color); */
     color: var(--white-color);
     padding:5px;
 }
@@ -73,6 +90,7 @@ header {
     height: 25px;
     display: flex;
     align-items: center;
+    z-index: 6;
 
 }
 
@@ -107,11 +125,49 @@ header {
 
 .showburger .menu::before{
     transform: translateY(0) rotate(45deg);
+    background: var(--main-color);
 }
 
 .showburger .menu::after{
     transform: translateY(0) rotate(-45deg);
+    background: var(--main-color);
+    
 }
+
+.mobile-links-holder {
+    transform:translateX(200%);
+    position: fixed;
+    right:0;
+    top: 0;
+    height: 100vh;
+    width:50%;
+    background:var(--main-color);
+    transition: all 0.5s ease;
+}
+.show-mobile-links-holder {
+    tranSform:translateX(0);
+}
+.mobile-links-holder ul{
+    list-style: none;
+}
+.mobile-links-holder a{
+    color:var(--white-color);
+    text-decoration: none;
+    display:block;
+    padding:25px 0 25px 20px;
+}
+.mobile-active-links{
+    background: var(--white-color);
+    color: var(--main-color) !important;
+}
+.mobile-links-holder BUtton{
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    background: var(--main-color);
+    margin-left: 20px;
+}
+
+
 
 
 
@@ -164,7 +220,7 @@ border: 2px solid transparent;
 }
 
 .desk-link-holder ul a:hover{
-              border: 2px solid var(--main-color);
+              /* border: 2px solid var(--main-color); */
 }
 
 .header-banner-section{
@@ -177,13 +233,13 @@ background-size:cover;
 }
 
 .banner-content{
-    border:3px solid red;
+    /* border:3px solid red; */
     width: 90%;
     height: 100%;
     margin: 0 auto;
 }
 .header-text-container{
-    border:3px solid purple;
+    /* border:3px solid purple; */
     width:50%;
 }
 
