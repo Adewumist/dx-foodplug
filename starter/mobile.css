@@ -1,4 +1,6 @@
 @media screen and (max-width:855px){
+    
+    /* header section starts here */
 
 
     .nau-desktop{
@@ -10,11 +12,72 @@
     }
 
     .header-banner-section{
-        padding: 80px 0 30px 0;
+        padding: 120px 0 30px 0;
         background-position: center;
     }
 
     .header-text-container{
         min-width:100%;
     }
+
+    /* header section ends here */
+    
+    
+    /* about us section starts here */
+
+    .aboutus-container{
+        justify-content: center;
+    }
+
+    .aboutus-text-holder{
+        min-width: 100%;
+    }
+    .aboutus-image-holder{
+        min-width: 95%;
+        margin: 20px 0;
+    }
+
+    /* about us section ends here */
+
+    /* explore food section start here */
+    .explorefoods-card {
+        margin: 20px 0;
+    }
+    /* explore food section ends here */
+    
+    /* faq section starts here */
+    faq.items {
+        min-width: 100%;
+    }
+
+    /* faq section ends here */
+
+    /* cta section starts here */
+    .cta-showcase{
+        flex-direction: column;
+        text-align: center;
+        padding: 0 auto;
+    }
+    .cta-notice{
+        padding: 30px 20px;
+    }
+
+
+
+    /* cta section ends here */
+     
+    /* footer section starts here */
+    
+    footer{
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .footer-icon-holder{
+        margin:15px 0;
+    }
+    /* footer section ends here */
+
+
 }
